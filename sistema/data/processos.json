@@ -1,0 +1,108 @@
+[
+  {
+    "id": "p-001",
+    "numero": "5001234-12.2023.8.16.0001",
+    "tipo": "Reintegração de posse",
+    "vara": "2ª Vara Cível",
+    "tribunal": "TJPR",
+    "autor": "Imobiliária Alfa Ltda.",
+    "reu": "José da Silva",
+    "responsavel": "Giovanni",
+    "status": "Em andamento",
+    "proximaAudiencia": "2026-05-28",
+    "proximoPrazo": "2026-05-28",
+    "faseAtual": "Instrução — aguardando audiência de instrução",
+    "cliente": "Imobiliária Alfa",
+    "observacoes": "Réu alega posse de boa-fé. Laudo pericial aguardado.",
+    "movimentacoes": [
+      {
+        "id": "m-001",
+        "data": "2026-05-10",
+        "descricao": "Laudo pericial juntado aos autos",
+        "tipo": "despacho"
+      },
+      {
+        "id": "m-002",
+        "data": "2026-04-15",
+        "descricao": "Audiência de conciliação realizada — sem acordo",
+        "tipo": "audiencia"
+      }
+    ],
+    "createdAt": "2023-08-15T10:00:00.000Z",
+    "updatedAt": "2026-05-10T14:30:00.000Z"
+  },
+  {
+    "id": "p-002",
+    "numero": "5002345-88.2024.8.16.0001",
+    "tipo": "Ação de usucapião",
+    "vara": "1ª Vara de Registros Públicos",
+    "tribunal": "TJPR",
+    "autor": "Maria Aparecida dos Santos",
+    "reu": "Réus em edital",
+    "responsavel": "Enrico",
+    "status": "Em andamento",
+    "proximoPrazo": "2026-06-10",
+    "faseAtual": "Citação por edital — aguardando publicação",
+    "cliente": "Maria Aparecida dos Santos",
+    "observacoes": "Posse mansa e pacífica há 18 anos. Documentação completa.",
+    "movimentacoes": [
+      {
+        "id": "m-003",
+        "data": "2026-05-02",
+        "descricao": "Despacho determinando citação por edital",
+        "tipo": "despacho"
+      }
+    ],
+    "createdAt": "2024-02-20T09:00:00.000Z",
+    "updatedAt": "2026-05-02T11:00:00.000Z"
+  },
+  {
+    "id": "p-003",
+    "numero": "5003456-44.2022.8.16.0013",
+    "tipo": "Rescisão contratual c/c perdas e danos",
+    "vara": "3ª Vara Cível",
+    "tribunal": "TJPR",
+    "autor": "Construtora Beta S.A.",
+    "reu": "Carlos Eduardo Martins",
+    "responsavel": "Giovanni",
+    "status": "Aguardando movimento",
+    "faseAtual": "Sentença — aguardando publicação",
+    "cliente": "Construtora Beta S.A.",
+    "observacoes": "Réu inadimplente há 14 meses. Sentença favorável esperada.",
+    "movimentacoes": [
+      {
+        "id": "m-004",
+        "data": "2026-04-28",
+        "descricao": "Julgamento em pauta para próxima sessão",
+        "tipo": "despacho"
+      }
+    ],
+    "createdAt": "2022-11-05T08:30:00.000Z",
+    "updatedAt": "2026-04-28T16:00:00.000Z"
+  },
+  {
+    "id": "p-004",
+    "numero": "5004567-77.2025.8.16.0001",
+    "tipo": "Ação de cobrança",
+    "vara": "4ª Vara Cível",
+    "tribunal": "TJPR",
+    "autor": "Imobiliária Delta Ltda.",
+    "reu": "Roberto Fernandes",
+    "responsavel": "Jaqueline",
+    "status": "Em andamento",
+    "proximoPrazo": "2026-05-25",
+    "faseAtual": "Contestação — prazo em curso",
+    "cliente": "Imobiliária Delta",
+    "observacoes": "",
+    "movimentacoes": [
+      {
+        "id": "m-005",
+        "data": "2026-05-15",
+        "descricao": "Citação realizada com sucesso",
+        "tipo": "despacho"
+      }
+    ],
+    "createdAt": "2025-03-10T10:00:00.000Z",
+    "updatedAt": "2026-05-15T09:00:00.000Z"
+  }
+]

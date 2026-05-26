@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-marinho: #1F2346;
+  --color-marinho-light: #2a3060;
+  --color-marinho-dark: #161b38;
+  --color-dourado: #DFA568;
+  --color-dourado-light: #ebb880;
+  --color-dourado-dark: #c8904e;
+}
+
+:root {
+  --background: #f5f4f1;
+  --foreground: #1F2346;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Questrial', Arial, Helvetica, sans-serif;
+}
+
+input, select, textarea {
+  font-family: inherit;
+}

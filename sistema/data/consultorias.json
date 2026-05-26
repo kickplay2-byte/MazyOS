@@ -1,0 +1,102 @@
+[
+  {
+    "id": "c-001",
+    "imobiliaria": "Imobiliária Alfa",
+    "responsavel": "Giovanni",
+    "status": "Em dia",
+    "valorMensal": 1200,
+    "dataRenovacao": "2026-12-31",
+    "escopo": [
+      "Análise de contratos de locação",
+      "Consultoria em vendas e financiamentos",
+      "Resposta a dúvidas jurídicas dos corretores",
+      "Revisão de minutas e propostas"
+    ],
+    "historico": [
+      { "id": "h-001", "mes": "2026-05", "status": "Pendente", "observacao": "Entrega prevista para 30/05" },
+      { "id": "h-002", "mes": "2026-04", "status": "Realizada", "observacao": "" },
+      { "id": "h-003", "mes": "2026-03", "status": "Realizada", "observacao": "" }
+    ],
+    "observacoes": "Cliente prioritário — 23 corretores vinculados.",
+    "createdAt": "2024-01-10T10:00:00.000Z",
+    "updatedAt": "2026-05-01T09:00:00.000Z"
+  },
+  {
+    "id": "c-002",
+    "imobiliaria": "Imobiliária Delta",
+    "responsavel": "Enrico",
+    "status": "Pendente entrega",
+    "valorMensal": 900,
+    "dataRenovacao": "2026-08-15",
+    "escopo": [
+      "Consultoria em contratos de locação",
+      "Suporte jurídico para corretores"
+    ],
+    "historico": [
+      { "id": "h-004", "mes": "2026-05", "status": "Pendente", "observacao": "Reunião agendada p/ 26/05" },
+      { "id": "h-005", "mes": "2026-04", "status": "Realizada", "observacao": "" }
+    ],
+    "observacoes": "",
+    "createdAt": "2024-03-01T10:00:00.000Z",
+    "updatedAt": "2026-05-01T09:00:00.000Z"
+  },
+  {
+    "id": "c-003",
+    "imobiliaria": "Imobiliária Gama",
+    "responsavel": "Giovanni",
+    "status": "Inadimplente",
+    "valorMensal": 1500,
+    "dataRenovacao": "2026-06-30",
+    "escopo": [
+      "Análise de contratos",
+      "Consultoria imobiliária completa",
+      "Treinamento de corretores"
+    ],
+    "historico": [
+      { "id": "h-006", "mes": "2026-05", "status": "Pendente", "observacao": "Aguardando pagamento" },
+      { "id": "h-007", "mes": "2026-04", "status": "Atrasada", "observacao": "Pagamento em aberto" }
+    ],
+    "observacoes": "Cobranças em andamento. Contato feito em 20/05.",
+    "createdAt": "2023-07-01T10:00:00.000Z",
+    "updatedAt": "2026-05-20T14:00:00.000Z"
+  },
+  {
+    "id": "c-004",
+    "imobiliaria": "Imobiliária Omega",
+    "responsavel": "Enrico",
+    "status": "Em dia",
+    "valorMensal": 800,
+    "dataRenovacao": "2026-10-01",
+    "escopo": [
+      "Consultoria em vendas",
+      "Revisão de contratos"
+    ],
+    "historico": [
+      { "id": "h-008", "mes": "2026-05", "status": "Realizada", "observacao": "" },
+      { "id": "h-009", "mes": "2026-04", "status": "Realizada", "observacao": "" }
+    ],
+    "observacoes": "",
+    "createdAt": "2024-10-01T10:00:00.000Z",
+    "updatedAt": "2026-05-05T10:00:00.000Z"
+  },
+  {
+    "id": "c-005",
+    "imobiliaria": "Imobiliária Sigma",
+    "responsavel": "Giovanni",
+    "status": "Em dia",
+    "valorMensal": 1100,
+    "dataRenovacao": "2026-09-30",
+    "escopo": [
+      "Análise de contratos de locação e venda",
+      "Suporte jurídico aos corretores",
+      "Consultoria em financiamentos"
+    ],
+    "historico": [
+      { "id": "h-010", "mes": "2026-05", "status": "Realizada", "observacao": "" },
+      { "id": "h-011", "mes": "2026-04", "status": "Realizada", "observacao": "" }
+    ],
+    "observacoes": "15 corretores vinculados.",
+    "createdAt": "2024-10-01T10:00:00.000Z",
+    "updatedAt": "2026-05-10T09:00:00.000Z"
+  }
+]

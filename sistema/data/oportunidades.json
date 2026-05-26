@@ -1,0 +1,274 @@
+[
+  {
+    "id": "op-001",
+    "titulo": "Distrato — Ferreira (Ecoville)",
+    "clienteId": "cl-001",
+    "corretorId": "co-001",
+    "imobiliariaId": "im-001",
+    "tipoServico": "Análise contratual",
+    "status": "diagnostico_realizado",
+    "valorEstimado": 4500,
+    "probabilidade": 80,
+    "responsavel": "Giovanni",
+    "proximoFollowUp": "2026-05-27",
+    "origem": "corretor",
+    "observacoes": "Cliente quer rescindir contrato com construtora. Cláusula de multa em análise.",
+    "motivoPerda": null,
+    "interacoes": [
+      {
+        "id": "int-001a",
+        "data": "2026-05-10",
+        "tipo": "whatsapp",
+        "descricao": "Primeira conversa com Rafael Andrade (corretor). Situação explicada, cliente encaminhado.",
+        "responsavel": "Giovanni"
+      },
+      {
+        "id": "int-001b",
+        "data": "2026-05-14",
+        "tipo": "reuniao",
+        "descricao": "Reunião com Carlos Eduardo Ferreira. Documentos coletados. Diagnóstico realizado.",
+        "responsavel": "Giovanni"
+      }
+    ],
+    "createdAt": "2026-05-10T10:00:00.000Z",
+    "updatedAt": "2026-05-14T15:00:00.000Z"
+  },
+  {
+    "id": "op-002",
+    "titulo": "Escritura — Mariana Alves",
+    "clienteId": "cl-002",
+    "corretorId": "co-003",
+    "imobiliariaId": "im-002",
+    "tipoServico": "Regularização",
+    "status": "proposta_enviada",
+    "valorEstimado": 3200,
+    "probabilidade": 70,
+    "responsavel": "Giovanni",
+    "proximoFollowUp": "2026-05-26",
+    "origem": "corretor",
+    "observacoes": "Imóvel rural sem escritura. Proposta enviada em 19/05.",
+    "motivoPerda": null,
+    "interacoes": [
+      {
+        "id": "int-002a",
+        "data": "2026-05-08",
+        "tipo": "ligacao",
+        "descricao": "Ligação inicial. Lucas Ferreira apresentou o caso. Cliente interessada.",
+        "responsavel": "Giovanni"
+      },
+      {
+        "id": "int-002b",
+        "data": "2026-05-19",
+        "tipo": "proposta",
+        "descricao": "Proposta enviada via WhatsApp com escopo e valor. Aguardando retorno.",
+        "responsavel": "Giovanni"
+      }
+    ],
+    "createdAt": "2026-05-08T09:00:00.000Z",
+    "updatedAt": "2026-05-19T11:00:00.000Z"
+  },
+  {
+    "id": "op-003",
+    "titulo": "ITBI — Roberto Nascimento",
+    "clienteId": "cl-003",
+    "corretorId": null,
+    "imobiliariaId": "im-002",
+    "tipoServico": "Parecer",
+    "status": "negociacao",
+    "valorEstimado": 2800,
+    "probabilidade": 60,
+    "responsavel": "Giovanni",
+    "proximoFollowUp": "2026-05-28",
+    "origem": "imobiliaria",
+    "observacoes": "Cliente questiona o valor do ITBI. Solicitou desconto nos honorários.",
+    "motivoPerda": null,
+    "interacoes": [
+      {
+        "id": "int-003a",
+        "data": "2026-05-12",
+        "tipo": "email",
+        "descricao": "E-mail recebido da Remax com dados do cliente. Respondido com proposta inicial.",
+        "responsavel": "Giovanni"
+      },
+      {
+        "id": "int-003b",
+        "data": "2026-05-20",
+        "tipo": "whatsapp",
+        "descricao": "Cliente pediu revisão do valor. Em negociação.",
+        "responsavel": "Giovanni"
+      }
+    ],
+    "createdAt": "2026-05-12T10:00:00.000Z",
+    "updatedAt": "2026-05-20T16:00:00.000Z"
+  },
+  {
+    "id": "op-004",
+    "titulo": "Inventário — Ana Paula Rodrigues",
+    "clienteId": "cl-004",
+    "corretorId": null,
+    "imobiliariaId": null,
+    "tipoServico": "Inventário",
+    "status": "contrato_enviado",
+    "valorEstimado": 8500,
+    "probabilidade": 90,
+    "responsavel": "Enrico",
+    "proximoFollowUp": "2026-05-26",
+    "origem": "indicacao_pf",
+    "observacoes": "Inventário extrajudicial. Contrato enviado para assinatura em 22/05.",
+    "motivoPerda": null,
+    "interacoes": [
+      {
+        "id": "int-004a",
+        "data": "2026-05-05",
+        "tipo": "reuniao",
+        "descricao": "Reunião presencial. Situação do imóvel mapeada. Diagnóstico completo.",
+        "responsavel": "Enrico"
+      },
+      {
+        "id": "int-004b",
+        "data": "2026-05-15",
+        "tipo": "proposta",
+        "descricao": "Proposta aceita após ajuste no prazo de entrega.",
+        "responsavel": "Enrico"
+      },
+      {
+        "id": "int-004c",
+        "data": "2026-05-22",
+        "tipo": "email",
+        "descricao": "Contrato enviado por e-mail. Prazo para assinatura: 3 dias úteis.",
+        "responsavel": "Enrico"
+      }
+    ],
+    "createdAt": "2026-05-05T09:00:00.000Z",
+    "updatedAt": "2026-05-22T10:00:00.000Z"
+  },
+  {
+    "id": "op-005",
+    "titulo": "Contrato abusivo — Fábio Souza",
+    "clienteId": "cl-005",
+    "corretorId": "co-004",
+    "imobiliariaId": "im-002",
+    "tipoServico": "Análise contratual",
+    "status": "diagnostico_pendente",
+    "valorEstimado": 3500,
+    "probabilidade": 50,
+    "responsavel": "Giovanni",
+    "proximoFollowUp": "2026-05-25",
+    "origem": "corretor",
+    "observacoes": "Fernanda Lima encaminhou. Cliente ainda não respondeu para marcar reunião.",
+    "motivoPerda": null,
+    "interacoes": [
+      {
+        "id": "int-005a",
+        "data": "2026-05-18",
+        "tipo": "whatsapp",
+        "descricao": "Corretor Fernanda Lima indicou o caso. Tentei contato com o cliente, sem retorno.",
+        "responsavel": "Giovanni"
+      }
+    ],
+    "createdAt": "2026-05-18T11:00:00.000Z",
+    "updatedAt": "2026-05-18T11:00:00.000Z"
+  },
+  {
+    "id": "op-006",
+    "titulo": "Locação comercial — Juliana Torres",
+    "clienteId": "cl-006",
+    "corretorId": "co-002",
+    "imobiliariaId": "im-001",
+    "tipoServico": "Análise contratual",
+    "status": "fechado",
+    "valorEstimado": 2200,
+    "probabilidade": 100,
+    "responsavel": "Giovanni",
+    "proximoFollowUp": null,
+    "origem": "corretor",
+    "observacoes": "Revisão concluída. Cliente satisfeita. Pagamento recebido.",
+    "motivoPerda": null,
+    "interacoes": [
+      {
+        "id": "int-006a",
+        "data": "2026-04-28",
+        "tipo": "whatsapp",
+        "descricao": "Patrícia Souza encaminhou o caso. Primeiro contato com a cliente feito.",
+        "responsavel": "Giovanni"
+      },
+      {
+        "id": "int-006b",
+        "data": "2026-05-03",
+        "tipo": "reuniao",
+        "descricao": "Reunião e análise do contrato de locação. Identificadas 3 cláusulas abusivas.",
+        "responsavel": "Giovanni"
+      },
+      {
+        "id": "int-006c",
+        "data": "2026-05-10",
+        "tipo": "outro",
+        "descricao": "Parecer entregue. Cliente confirmou aceite e efetuou pagamento.",
+        "responsavel": "Giovanni"
+      }
+    ],
+    "createdAt": "2026-04-28T09:00:00.000Z",
+    "updatedAt": "2026-05-10T15:00:00.000Z"
+  },
+  {
+    "id": "op-007",
+    "titulo": "Usucapião — Marcelo Pereira",
+    "clienteId": "cl-007",
+    "corretorId": null,
+    "imobiliariaId": null,
+    "tipoServico": "Usucapião",
+    "status": "primeiro_contato",
+    "valorEstimado": 6000,
+    "probabilidade": 40,
+    "responsavel": "Enrico",
+    "proximoFollowUp": "2026-05-30",
+    "origem": "direto",
+    "observacoes": "Veio direto pelo site. Caso complexo. Aguardando documentação inicial.",
+    "motivoPerda": null,
+    "interacoes": [
+      {
+        "id": "int-007a",
+        "data": "2026-05-21",
+        "tipo": "ligacao",
+        "descricao": "Ligação inicial. Caso explicado brevemente. Solicitei documentos básicos por e-mail.",
+        "responsavel": "Enrico"
+      }
+    ],
+    "createdAt": "2026-05-21T14:00:00.000Z",
+    "updatedAt": "2026-05-21T14:00:00.000Z"
+  },
+  {
+    "id": "op-008",
+    "titulo": "Distrato — Diego Moura",
+    "clienteId": "cl-009",
+    "corretorId": "co-007",
+    "imobiliariaId": "im-004",
+    "tipoServico": "Análise contratual",
+    "status": "perdido",
+    "valorEstimado": 4000,
+    "probabilidade": 0,
+    "responsavel": "Giovanni",
+    "proximoFollowUp": null,
+    "origem": "corretor",
+    "observacoes": "Cliente optou por advogado de família conhecido.",
+    "motivoPerda": "Concorrência — indicação de terceiro de confiança",
+    "interacoes": [
+      {
+        "id": "int-008a",
+        "data": "2026-05-05",
+        "tipo": "whatsapp",
+        "descricao": "Bruno Carvalho encaminhou. Contato feito com Diego.",
+        "responsavel": "Giovanni"
+      },
+      {
+        "id": "int-008b",
+        "data": "2026-05-13",
+        "tipo": "ligacao",
+        "descricao": "Cliente informou que fechou com outro advogado. Agradecido mas decidido.",
+        "responsavel": "Giovanni"
+      }
+    ],
+    "createdAt": "2026-05-05T10:00:00.000Z",
+    "updatedAt": "2026-05-13T16:00:00.000Z"
+  }
+]

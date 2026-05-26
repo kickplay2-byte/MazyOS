@@ -1,0 +1,68 @@
+[
+  {
+    "id": "e-001",
+    "tipo": "Due diligence",
+    "titulo": "Due diligence — Apartamento Rua XV, 820",
+    "cliente": "Pedro Alves (corretor Alfa)",
+    "responsavel": "Giovanni",
+    "status": "Em andamento",
+    "proximoPrazo": "2026-05-30",
+    "etapas": [
+      { "id": "et-001", "titulo": "Análise da matrícula do imóvel", "concluida": true },
+      { "id": "et-002", "titulo": "Certidões dos vendedores (feito, protestos, distribuidores)", "concluida": true },
+      { "id": "et-003", "titulo": "Verificação de débitos de IPTU e condomínio", "concluida": false, "prazo": "2026-05-28" },
+      { "id": "et-004", "titulo": "Emissão do parecer final", "concluida": false, "prazo": "2026-05-30" }
+    ],
+    "documentos": [
+      { "id": "d-001", "nome": "Matrícula atualizada", "necessario": true, "entregue": true },
+      { "id": "d-002", "nome": "RG e CPF dos vendedores", "necessario": true, "entregue": true },
+      { "id": "d-003", "nome": "Declaração de quitação de condomínio", "necessario": true, "entregue": false },
+      { "id": "d-004", "nome": "Certidão de débitos de IPTU", "necessario": true, "entregue": false }
+    ],
+    "observacoes": "Comprador tem prazo de proposta até 31/05. Urgente.",
+    "createdAt": "2026-05-15T10:00:00.000Z",
+    "updatedAt": "2026-05-20T14:00:00.000Z"
+  },
+  {
+    "id": "e-002",
+    "tipo": "Regularização",
+    "titulo": "Regularização — Lote 12, Jardim das Acácias",
+    "cliente": "Ana Lima",
+    "responsavel": "Enrico",
+    "status": "Aguardando cliente",
+    "proximoPrazo": "2026-06-15",
+    "etapas": [
+      { "id": "et-005", "titulo": "Levantamento planialtimétrico", "concluida": true },
+      { "id": "et-006", "titulo": "Aprovação de projeto na prefeitura", "concluida": false, "prazo": "2026-06-10" },
+      { "id": "et-007", "titulo": "Averbação na matrícula", "concluida": false }
+    ],
+    "documentos": [
+      { "id": "d-005", "nome": "Planta aprovada pelo engenheiro", "necessario": true, "entregue": true },
+      { "id": "d-006", "nome": "Habite-se", "necessario": true, "entregue": false },
+      { "id": "d-007", "nome": "ART do engenheiro responsável", "necessario": true, "entregue": false }
+    ],
+    "observacoes": "Cliente aguardando retorno do engenheiro para ART.",
+    "createdAt": "2026-03-10T10:00:00.000Z",
+    "updatedAt": "2026-05-18T11:00:00.000Z"
+  },
+  {
+    "id": "e-003",
+    "tipo": "Análise contratual",
+    "titulo": "Análise — Contrato de compra e venda Construtora Beta",
+    "cliente": "Imobiliária Delta",
+    "responsavel": "Giovanni",
+    "status": "Concluída",
+    "etapas": [
+      { "id": "et-008", "titulo": "Leitura e mapeamento de cláusulas", "concluida": true },
+      { "id": "et-009", "titulo": "Identificação de riscos jurídicos", "concluida": true },
+      { "id": "et-010", "titulo": "Emissão do parecer e recomendações", "concluida": true }
+    ],
+    "documentos": [
+      { "id": "d-008", "nome": "Contrato original", "necessario": true, "entregue": true },
+      { "id": "d-009", "nome": "Parecer emitido", "necessario": false, "entregue": true }
+    ],
+    "observacoes": "Parecer emitido em 12/05. Contrato aprovado com ressalvas na cláusula 8.",
+    "createdAt": "2026-05-05T10:00:00.000Z",
+    "updatedAt": "2026-05-12T16:00:00.000Z"
+  }
+]

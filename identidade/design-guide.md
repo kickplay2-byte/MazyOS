@@ -1,59 +1,41 @@
 # Identidade visual
 
-> Como a marca aparece em tudo que o MazyOS gera.
-> As skills de conteúdo, carrossel e post leem esse arquivo antes de criar qualquer visual.
-> Edite quando a marca evoluir.
-
----
-
 ## Cores
 
-- **Fundo principal:**
-
-- **Cor de destaque / CTA:**
-
-- **Texto principal:**
-
-- **Fundo alternativo / cards:**
-
-- **Cor proibida:**
-
----
+- **Fundo principal:** #1F2346 (azul marinho escuro)
+- **Cor de destaque / CTA:** #DFA568 (dourado)
+- **Texto principal / fundo claro:** #FFFFFF (branco)
+- **Cor proibida:** tons de vermelho, verde ou qualquer cor que destoe do azul marinho + dourado
 
 ## Tipografia
 
-- **Títulos e destaques:**
-
-- **Corpo, subtítulos e botões:**
-
-- **Peso do título:**
-
----
+- **Títulos elegantes / logo:** Didot Italic (Adobe)
+- **Corpo, subtítulos e texto principal:** Old Standard (Canva)
+- **Elementos modernos, botões, labels:** Questrial (Canva)
+- **Peso do título:** itálico no Didot; regular/bold no Old Standard
 
 ## Estilo geral
 
----
+Premium, clássico e confiável. Não é moderno-minimalista nem colorido — é sobriedade de escritório de advocacia de alto padrão. O dourado sobre marinho transmite prestígio sem ostentação.
 
 ## Elementos-chave
 
-- Bordas:
-- Border-radius dos cards:
-- Botões:
-- Sombras:
-
----
-
-## O que NUNCA fazer
-
----
+- Bordas: finas, discretas, na cor marinho ou dourado
+- Border-radius dos cards: mínimo (cantos retos ou levemente arredondados — máx 4px)
+- Botões: fundo dourado (#DFA568) com texto marinho (#1F2346), ou inverso
+- Sombras: sutis, quase imperceptíveis — não usar sombras dramáticas
 
 ## Logo
 
-- **Arquivo:** *(ex: identidade/logo.png ou identidade/logo.svg)*
-- **Versão pra fundo escuro:** *(se tiver — ex: identidade/logo-branco.png)*
-- **Onde usar:** slide final do carrossel (CTA), header de propostas, slides de apresentação
-- **Tamanho sugerido:** largura entre 120-200px nos HTMLs
+- **Versão fundo claro:** `identidade/Logo sem Fundo.png` (ícone VS + "Vieira da Silva Advocacia" em marinho)
+- **Versão fundo escuro:** `identidade/01.png` (dourado sobre marinho) — usar em fundos #1F2346
+- **Versão 2026:** `identidade/01. 2026 sem fundo.png`
+- **Onde usar:** slide final do carrossel (CTA), header de propostas, apresentações
+- **Tamanho sugerido:** largura entre 150–220px nos HTMLs
 
----
+## O que NUNCA fazer
 
-## Observações adicionais
+- Usar fontes sem serifa pesadas (Arial, Impact) — descaracteriza a marca
+- Misturar mais de 3 cores numa peça
+- Colocar texto dourado em fundo branco (baixo contraste)
+- Usar o logo sobre fundos coloridos que não sejam marinho ou branco

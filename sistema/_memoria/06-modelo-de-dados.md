@@ -188,6 +188,140 @@ Arquivo: `data/consultorias.json` (já existe)
 
 ---
 
+---
+
+## 9. ModeloJuridico (Fase 10)
+
+Tabela Supabase: `modelos_juridicos` (document-store: `id text pk, data jsonb`)
+
+| Campo | Tipo | Obrigatório | Notas |
+|-------|------|-------------|-------|
+| id | string | ✓ | `mj-XXX` |
+| titulo | string | ✓ | |
+| descricao | string | | |
+| categoria | CategoriaModelo | ✓ | contrato/notificacao/proposta/etc |
+| tipoDocumento | TipoDocumento | ✓ | compra_venda/locacao/etc |
+| area | string | ✓ | Ex: Direito Imobiliário |
+| status | StatusBaseConhecimento | ✓ | ativo/rascunho/em_revisao/desatualizado/arquivado |
+| versao | string | ✓ | Ex: 1.0 |
+| conteudo | string | ✓ | Texto do modelo |
+| tags | string[] | ✓ | |
+| responsavel | Responsavel | ✓ | |
+| ultimaRevisao | string | | ISO date |
+| createdAt | string | ✓ | |
+| updatedAt | string | ✓ | |
+
+---
+
+## 10. ClausulaPadrao (Fase 10)
+
+Tabela Supabase: `clausulas_padrao` (document-store)
+
+| Campo | Tipo | Obrigatório | Notas |
+|-------|------|-------------|-------|
+| id | string | ✓ | `cp-XXX` |
+| titulo | string | ✓ | |
+| descricao | string | | |
+| categoria | CategoriaClausula | ✓ | pagamento/posse/financiamento/etc |
+| area | string | ✓ | |
+| aplicacao | string | ✓ | Onde se aplica |
+| texto | string | ✓ | Texto da cláusula |
+| riscos | string | | Riscos e pontos de atenção |
+| tags | string[] | ✓ | |
+| status | StatusBaseConhecimento | ✓ | |
+| responsavel | Responsavel | ✓ | |
+| ultimaRevisao | string | | |
+| createdAt | string | ✓ | |
+| updatedAt | string | ✓ | |
+
+---
+
+## 11. ChecklistJuridico (Fase 10)
+
+Tabela Supabase: `checklists_juridicos` (document-store)
+
+| Campo | Tipo | Obrigatório | Notas |
+|-------|------|-------------|-------|
+| id | string | ✓ | `cl-XXX` |
+| titulo | string | ✓ | |
+| descricao | string | | |
+| tipoDemanda | string | ✓ | Ex: compra_venda_financiamento |
+| area | string | ✓ | |
+| itens | ItemChecklist[] | ✓ | Array de itens |
+| status | StatusBaseConhecimento | ✓ | |
+| responsavel | Responsavel | ✓ | |
+| ultimaRevisao | string | | |
+| createdAt | string | ✓ | |
+| updatedAt | string | ✓ | |
+
+**ItemChecklist:** `{ id: string; texto: string; obrigatorio: boolean; ordem: number; observacao?: string }`
+
+---
+
+## 12. OrientacaoInterna (Fase 10)
+
+Tabela Supabase: `orientacoes_internas` (document-store)
+
+| Campo | Tipo | Obrigatório | Notas |
+|-------|------|-------------|-------|
+| id | string | ✓ | `oi-XXX` |
+| titulo | string | ✓ | |
+| descricao | string | | |
+| area | string | ✓ | |
+| tema | string | ✓ | Ex: Financiamento Bancário |
+| conteudo | string | ✓ | Texto livre estruturado |
+| tags | string[] | ✓ | |
+| status | StatusBaseConhecimento | ✓ | |
+| responsavel | Responsavel | ✓ | |
+| ultimaRevisao | string | | |
+| createdAt | string | ✓ | |
+| updatedAt | string | ✓ | |
+
+---
+
+## 13. MinutaAssistida (Fase 10.3 — campos expandidos na Fase 10.4)
+
+Tabela Supabase: `minutas_assistidas` (document-store: `id text pk, data jsonb`)
+
+| Campo | Tipo | Obrigatório | Notas |
+|-------|------|-------------|-------|
+| id | string | ✓ | UUID (`randomUUID()`) |
+| titulo | string | ✓ | Título descritivo da minuta |
+| status | StatusMinuta | ✓ | `rascunho` \| `em_revisao` \| `aprovada` \| `arquivada` |
+| entityType | MinutaEntityType | | `processo` \| `extrajudicial` \| `consultoria` \| `oportunidade` \| `proposta` |
+| entityId | string | | FK para a entidade de origem |
+| entityLabel | string | | *(Fase 10.4)* Label desnormalizado da entidade de origem para exibição |
+| tipoDocumento | TipoDocumentoMinuta | ✓ | `compra_e_venda` \| `locacao` \| `inventario` \| ... |
+| modeloId | string | | FK → ModeloJuridico (opcional) |
+| modeloTitulo | string | | Denormalizado para exibição |
+| clausulaIds | string[] | ✓ | Array de IDs de ClausulaPadrao (pode ser vazio) |
+| checklistId | string | | FK → ChecklistJuridico (opcional) |
+| checklistTitulo | string | | Denormalizado para exibição |
+| orientacaoIds | string[] | ✓ | Array de IDs de OrientacaoInterna (pode ser vazio) |
+| conteudo | string | ✓ | Texto gerado por `montarConteudoMinutaAssistida()` — 7 seções + aviso jurídico (Fase 10.4: 0. Contexto, 6. Pontos de atenção) |
+| responsavel | Responsavel | ✓ | Membro da equipe responsável |
+| observacoes | string | | Observações internas |
+| duplicadaDeId | string | | *(Fase 10.4)* ID da minuta original se esta for uma cópia via `duplicarMinutaAssistida` |
+| revisadoEm | string | | *(Fase 10.4)* ISO datetime — preenchido automaticamente ao mudar status para `em_revisao` |
+| aprovadoEm | string | | *(Fase 10.4)* ISO datetime — preenchido automaticamente ao mudar status para `aprovada` |
+| createdAt | string | ✓ | ISO datetime |
+| updatedAt | string | ✓ | ISO datetime |
+
+**StatusMinuta:** `rascunho` | `em_revisao` | `aprovada` | `arquivada`
+
+**TipoDocumentoMinuta:** `compra_e_venda` | `locacao` | `inventario` | `compromisso` | `procuracao` | `notificacao` | `parecer` | `outro`
+
+**MinutaEntityType:** `processo` | `extrajudicial` | `consultoria` | `oportunidade` | `proposta`
+
+**Restrições:**
+- Nunca deletar — apenas arquivar (status `arquivada`)
+- Arquivadas ficam ocultas na lista mas persistem no banco
+- Conteúdo é gerado no momento da criação por `montarConteudoMinutaAssistida()` — não há IA
+- Conteúdo pode ser editado manualmente pelo usuário após criação via `atualizarConteudoMinutaAssistida`
+- Sem exportação DOCX/PDF (aguarda fase futura)
+
+---
+
 ## Diagrama de relacionamentos
 
 ```
@@ -203,3 +337,41 @@ Arquivo: `data/consultorias.json` (já existe)
 [Cliente]     ←── clienteId    ──── [Extrajudicial]
 [Cliente]     ←── clienteId    ──── [Processo]
 ```
+
+---
+
+## RLS por Role no Banco (Fase 11B — ativo desde 2026-05)
+
+As 16 tabelas do sistema têm Row Level Security ativo com policies granulares por role.
+O role do usuário é lido de `public.profiles` via função helper `has_any_role(text[])`.
+
+### Profiles (relacional — Fase 8)
+- Tabela: `profiles` (`id uuid pk → auth.users`, `role text`, `status text`)
+- Status válidos: `ativo` | `inativo`
+- Roles válidos: `admin` | `advogado` | `assistente` | `comercial`
+- RLS: SELECT own profile (todos) + SELECT all (admin) + UPDATE all (admin)
+- INSERT via trigger `on_auth_user_created` (security definer, bypassa RLS)
+
+### Tabelas document-store (todas)
+- Schema: `(id text pk, data jsonb)` — sem colunas individuais
+- RLS via `has_any_role(array['role1', 'role2', ...])` em cada policy
+- SELECT: todos os 4 roles ativos têm acesso completo de leitura
+- WRITE: restrito por role conforme matriz em `04-regras-do-sistema.md`
+
+### Funções helper SQL
+```sql
+-- Retorna o role do usuário ativo (NULL se inativo/sem profile)
+public.current_user_role() returns text
+
+-- Verifica se o usuário tem qualquer um dos roles listados
+public.has_any_role(allowed_roles text[]) returns boolean
+```
+
+Ambas: `security definer`, `set search_path = public`, `stable`, grant apenas a `authenticated`.
+
+### Scripts SQL
+| Script | Propósito |
+|--------|-----------|
+| `scripts/rls-minimo-authenticated.sql` | Base: anon bloqueado, authenticated full access |
+| `scripts/rls-role-based.sql` | Substituição: policies granulares por role (Fase 11B) |
+| `scripts/rls-rollback-authenticated.sql` | Rollback de emergência para estado mínimo |

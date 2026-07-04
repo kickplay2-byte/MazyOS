@@ -1,0 +1,37 @@
+[
+  {
+    "id": "ta-001",
+    "titulo": "Protocolar petição inicial — processo 0001234-55",
+    "descricao": "Revisar minutas e protocolar via PJe até o final do dia.",
+    "responsavel": "Giovanni",
+    "status": "em_andamento",
+    "prioridade": "alta",
+    "prazo": "2026-05-27",
+    "vinculoTipo": "processo",
+    "vinculoId": "p-001",
+    "createdAt": "2026-05-20T10:00:00.000Z",
+    "updatedAt": "2026-05-20T10:00:00.000Z"
+  },
+  {
+    "id": "ta-002",
+    "titulo": "Contatar imobiliária RE/MAX para renovação de contrato",
+    "responsavel": "Enrico",
+    "status": "pendente",
+    "prioridade": "normal",
+    "prazo": "2026-05-30",
+    "vinculoTipo": "livre",
+    "createdAt": "2026-05-21T09:00:00.000Z",
+    "updatedAt": "2026-05-21T09:00:00.000Z"
+  },
+  {
+    "id": "ta-003",
+    "titulo": "Enviar relatório mensal de consultoria",
+    "responsavel": "Jaqueline",
+    "status": "pendente",
+    "prioridade": "normal",
+    "prazo": "2026-05-31",
+    "vinculoTipo": "livre",
+    "createdAt": "2026-05-22T08:00:00.000Z",
+    "updatedAt": "2026-05-22T08:00:00.000Z"
+  }
+]

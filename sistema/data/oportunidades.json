@@ -221,11 +221,18 @@
     "valorEstimado": 6000,
     "probabilidade": 40,
     "responsavel": "Enrico",
-    "proximoFollowUp": "2026-05-30",
+    "proximoFollowUp": "2026-05-25",
     "origem": "direto",
     "observacoes": "Veio direto pelo site. Caso complexo. Aguardando documentação inicial.",
     "motivoPerda": null,
     "interacoes": [
+      {
+        "id": "8d1638ac-56c9-48c9-a53b-07ec10d134e5",
+        "data": "2026-05-26",
+        "tipo": "whatsapp",
+        "descricao": "Documentos pegos.",
+        "responsavel": "Enrico"
+      },
       {
         "id": "int-007a",
         "data": "2026-05-21",
@@ -235,7 +242,7 @@
       }
     ],
     "createdAt": "2026-05-21T14:00:00.000Z",
-    "updatedAt": "2026-05-21T14:00:00.000Z"
+    "updatedAt": "2026-05-26T01:19:16.640Z"
   },
   {
     "id": "op-008",

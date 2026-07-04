@@ -1,0 +1,72 @@
+[
+  {
+    "id": "oi-001",
+    "titulo": "Como Tratar Financiamento Insuficiente",
+    "descricao": "Orientação interna sobre os procedimentos quando o valor aprovado no financiamento é menor do que o necessário para fechar o negócio.",
+    "area": "Direito Imobiliário",
+    "tema": "Financiamento Bancário",
+    "conteudo": "SITUAÇÃO\nO banco aprovou um valor de financiamento menor do que o necessário para cobrir o saldo devedor ao vendedor.\n\nEXEMPLO\nImóvel: R$ 500.000\nEntrada: R$ 100.000 (20%)\nFinanciamento necessário: R$ 400.000\nFinanciamento aprovado: R$ 360.000\nDiferença: R$ 40.000\n\nPROCEDIMENTO RECOMENDADO\n\n1. ANTES DE QUALQUER AÇÃO\n   - Verificar se o contrato tem condição resolutiva vinculada ao valor aprovado ou apenas à aprovação do financiamento.\n   - Se a condição for 'aprovação de financiamento' sem valor mínimo, o comprador pode ser obrigado a complementar a diferença.\n\n2. OPÇÕES PARA O COMPRADOR\n   a) Complementar com recursos próprios (se possível);\n   b) Negociar desconto no preço com o vendedor;\n   c) Negociar parcelamento da diferença com o vendedor;\n   d) Buscar segundo financiamento (crédito pessoal) — verificar se o banco aceita;\n   e) Solicitar reavaliação do imóvel pelo banco;\n   f) Rejeitar o negócio (se houver cláusula de condição resolutiva com valor mínimo).\n\n3. NEGOCIAÇÃO COM O VENDEDOR\n   - Apresentar laudo de avaliação do banco como argumento;\n   - Propor desconto no valor total;\n   - Documentar qualquer acordo por escrito (aditivo ao contrato).\n\n4. DOCUMENTAÇÃO\n   - Registrar todas as comunicações;\n   - Formalizar qualquer alteração em aditivo contratual assinado;\n   - Se o negócio não se concretizar por esse motivo, verificar a cláusula de condição resolutiva.\n\nALERTA\nSem cláusula de condição resolutiva com valor mínimo de financiamento, o comprador que não consegue complementar a diferença pode perder as arras. Sempre incluir o valor mínimo de aprovação na condição resolutiva.",
+    "tags": ["financiamento", "insuficiente", "condição-resolutiva", "negociação"],
+    "status": "ativo",
+    "responsavel": "Giovanni",
+    "ultimaRevisao": "2026-04-05",
+    "createdAt": "2026-01-20T10:00:00.000Z",
+    "updatedAt": "2026-04-05T10:00:00.000Z"
+  },
+  {
+    "id": "oi-002",
+    "titulo": "Como Tratar Imóvel com Ônus na Matrícula",
+    "descricao": "Orientação sobre os procedimentos quando a matrícula do imóvel apresenta ônus reais (hipoteca, penhora, alienação fiduciária, etc.).",
+    "area": "Direito Imobiliário",
+    "tema": "Regularização Imobiliária",
+    "conteudo": "SITUAÇÃO\nDurante a análise de matrícula ou due diligence, são identificados ônus reais registrados (hipoteca, penhora, arresto, alienação fiduciária, usufruto, servidão, etc.).\n\nPROCEDIMENTO POR TIPO DE ÔNUS\n\n1. HIPOTECA\n   - Identificar o valor do débito hipotecário;\n   - Solicitar ao vendedor a baixa da hipoteca antes da venda;\n   - Alternativa: comprador assume a hipoteca (exige anuência do credor);\n   - Alternativa: usar parte do valor de compra para quitar a hipoteca diretamente ao banco hipotecário;\n   - Documentar a quitação e acompanhar o cancelamento na matrícula.\n\n2. PENHORA / ARRESTO\n   - Identificar o processo judicial de origem;\n   - Verificar se existe embargante com direito ao imóvel;\n   - Obter autorização judicial para a venda (se necessário);\n   - Compra 'em hasta pública' pode ser alternativa mais segura;\n   - Avaliar risco de evicção.\n\n3. ALIENAÇÃO FIDUCIÁRIA\n   - Identificar o credor fiduciário e o saldo devedor;\n   - Negociar quitação antecipada;\n   - Usar parte do preço de venda para quitar o débito;\n   - Obter Termo de Quitação e cancelar o registro da AF na matrícula;\n   - Somente assinar a escritura de venda após o cancelamento.\n\n4. USUFRUTO\n   - Verificar se é vitalício ou temporário;\n   - Se vitalício: exige anuência do usufrutuário ou aguardar extinção;\n   - Se o usufrutuário é o próprio vendedor: cancelar antes ou incluir no instrumento.\n\nREGRA GERAL\n- NUNCA fechar escritura de compra e venda com ônus registrado sem que ele seja cancelado ou expressamente assumido pelo comprador com desconto no preço.\n- Sempre obter matrícula atualizada após o cancelamento e ANTES da escritura definitiva.\n\nALERTA\nO comprador que adquire imóvel com ônus sem cuidado pode perder o imóvel por evicção. Documentar todos os passos e só fechar após cancelamento formal na matrícula.",
+    "tags": ["ônus", "hipoteca", "penhora", "alienação-fiduciária", "matrícula", "regularização"],
+    "status": "ativo",
+    "responsavel": "Giovanni",
+    "ultimaRevisao": "2026-04-10",
+    "createdAt": "2026-01-15T10:00:00.000Z",
+    "updatedAt": "2026-04-10T10:00:00.000Z"
+  },
+  {
+    "id": "oi-003",
+    "titulo": "Como Tratar Posse Antes da Escritura",
+    "descricao": "Orientação sobre os riscos e procedimentos quando o comprador solicita entrar no imóvel antes da lavratura da escritura ou quitação do preço.",
+    "area": "Direito Imobiliário",
+    "tema": "Posse e Transferência de Propriedade",
+    "conteudo": "SITUAÇÃO\nO comprador solicita ingressar no imóvel (para reformar, verificar, ou morar) antes de quitar o preço ou lavrar a escritura definitiva.\n\nRISCOS IDENTIFICADOS\n\nPara o VENDEDOR:\n- Dificuldade de desocupação em caso de inadimplemento;\n- Benfeitorias que o comprador alega indenizáveis;\n- Deterioração do imóvel sem responsabilização clara;\n- Recusa do comprador em sair se o negócio não se concretizar.\n\nPara o COMPRADOR:\n- Posse sem título (apenas contratual) pode ser contestada;\n- Incapacidade de registrar benfeitorias no RGI;\n- Risco de perder investimentos feitos no imóvel.\n\nPROCEDIMENTO RECOMENDADO\n\n1. AVALIAR SE É NECESSÁRIO\n   - Se o comprador precisa de posse antecipada, entender o motivo real;\n   - Na maioria dos casos, a posse só deve ser entregue após a escritura.\n\n2. SE A POSSE ANTECIPADA FOR INEVITÁVEL\n   a) Formalizar em instrumento escrito específico (comodato precário);\n   b) Estabelecer taxa de ocupação pelo período de posse antes da quitação;\n   c) Proibir expressamente reformas ou benfeitorias sem autorização;\n   d) Estabelecer prazo certo de desocupação em caso de resolução;\n   e) Obter confissão de dívida separada do saldo devedor;\n   f) Verificar se o seguro do imóvel cobre o período.\n\n3. BENFEITORIAS\n   - Proibir benfeitorias voluptuárias;\n   - Benfeitorias úteis: exigir aprovação prévia por escrito;\n   - Documentar o estado do imóvel ANTES da entrega (fotos + laudo).\n\n4. DOCUMENTAÇÃO MÍNIMA\n   - Termo de Permissão de Uso Precário (não é locação);\n   - Laudo fotográfico de vistoria;\n   - Seguro atualizado em nome do VENDEDOR.\n\nPOSIÇÃO DO ESCRITÓRIO\nNão recomendar posse antecipada. Se o cliente insistir, formalizar com todos os documentos acima e alertar sobre os riscos em documento assinado pelo cliente.",
+    "tags": ["posse-antecipada", "escritura", "comodato", "benfeitoria", "risco"],
+    "status": "ativo",
+    "responsavel": "Giovanni",
+    "ultimaRevisao": "2026-03-20",
+    "createdAt": "2026-01-18T10:00:00.000Z",
+    "updatedAt": "2026-03-20T10:00:00.000Z"
+  },
+  {
+    "id": "oi-004",
+    "titulo": "Como Tratar Comissão de Corretagem",
+    "descricao": "Orientação sobre os principais questionamentos envolvendo comissão de corretagem imobiliária e como posicionar o escritório.",
+    "area": "Direito Imobiliário",
+    "tema": "Corretagem e Relacionamento Comercial",
+    "conteudo": "SITUAÇÃO\nCliente questiona a validade, valor ou cobrança da comissão de corretagem, ou o corretor parceiro solicita orientação sobre como documentar a corretagem.\n\nRESPOSTA JURÍDICA RESUMIDA\n\n1. QUEM DEVE PAGAR\n   - Regra geral (CC, art. 724): quem contrata o corretor paga a corretagem;\n   - Prática do mercado imobiliário: geralmente pago pelo comprador em negócios com financiamento CEF;\n   - STJ (REsp 1.599.511/SP): comprador só paga se souber previamente da cobrança.\n\n2. VALOR LEGAL\n   - Tabela do CRECI-PR: para imóveis residenciais, geralmente 6% do valor da venda;\n   - Partes podem acordar percentual diferente;\n   - Não há limite legal máximo, mas juízes podem reduzir valores abusivos.\n\n3. QUANDO A CORRETAGEM É DEVIDA\n   - Quando o corretor causa efetivamente o negócio (aproxima as partes e o negócio se concretiza);\n   - Se o negócio se desfaz por culpa do vendedor: corretagem é devida;\n   - Se o negócio se desfaz por culpa do comprador: depende do contrato e do que foi previsto.\n\n4. COMO DOCUMENTAR CORRETAMENTE\n   a) Incluir cláusula de corretagem no contrato de compra e venda;\n   b) Comprador deve assinar declaração de conhecimento prévio da corretagem;\n   c) Emitir recibo identificando: valor, CRECI do corretor, imóvel negociado;\n   d) Contrato de prestação de serviços de corretagem (ideal).\n\n5. QUANDO O CLIENTE RECUSA PAGAR\n   - Verificar se o conhecimento prévio está documentado;\n   - Se não documentado: risco de ação de restituição do comprador;\n   - Orientar o parceiro corretor a regularizar documentação nos próximos negócios.\n\nPOSIÇÃO DO ESCRITÓRIO\nSempre recomendar que a corretagem seja expressamente prevista em contrato e que o comprador assine declaração de conhecimento. Disponibilizar modelo de cláusula (ver CP-008 — Base de Conhecimento).",
+    "tags": ["corretagem", "corretor", "CRECI", "STJ", "documentação"],
+    "status": "ativo",
+    "responsavel": "Giovanni",
+    "ultimaRevisao": "2026-04-01",
+    "createdAt": "2026-01-25T10:00:00.000Z",
+    "updatedAt": "2026-04-01T10:00:00.000Z"
+  },
+  {
+    "id": "oi-005",
+    "titulo": "Como Tratar Proposta Condicionada",
+    "descricao": "Orientação sobre como estruturar e analisar propostas de compra e venda que apresentam condições suspensivas ou resolutivas.",
+    "area": "Direito Imobiliário",
+    "tema": "Negociação e Contratos",
+    "conteudo": "SITUAÇÃO\nO comprador apresenta proposta com condições: venda de outro imóvel, aprovação de financiamento, aprovação de sócio, resultado de due diligence, aprovação familiar, etc.\n\nTIPOS DE CONDIÇÃO\n\n1. CONDIÇÃO SUSPENSIVA (CC, art. 125)\n   - O negócio SÓ se torna eficaz se a condição ocorrer;\n   - Exemplo: 'A venda só se efetiva se eu vender meu apartamento';\n   - Risco para o vendedor: mercado pode mudar; comprador pode não vender o imóvel.\n\n2. CONDIÇÃO RESOLUTIVA (CC, art. 127)\n   - O negócio JÁ É eficaz mas SE RESOLVE se a condição ocorrer;\n   - Exemplo: 'O contrato se resolve se o financiamento não for aprovado';\n   - Mais comum e mais seguro para estruturar.\n\nPROCEDIMENTO\n\n1. IDENTIFICAR A CONDIÇÃO\n   - É real ou é pretexto para fugir de arras?\n   - A condição é objetiva e verificável?\n   - Existe prazo definido para verificação?\n\n2. ESTRUTURAR CORRETAMENTE\n   a) Definir prazo máximo para verificação da condição;\n   b) Definir quem tem ônus de provar o cumprimento ou não;\n   c) Definir consequências para cada cenário;\n   d) Redigir em linguagem precisa.\n\n3. PROPOSTA COM VENDA PRÉVIA DE IMÓVEL\n   - Muito arriscado para o vendedor;\n   - Recomendar: prazo máximo curto (30-60 dias);\n   - Taxa de ocupação se o comprador entrar antes de vender o imóvel;\n   - Reserva do direito de continuar oferecendo o imóvel no mercado ('cláusula de melhor proposta').\n\n4. PROPOSTA COM APROVAÇÃO DE FINANCIAMENTO\n   - A mais comum e mais aceita;\n   - Incluir valor mínimo de aprovação na condição;\n   - Prazo: 30-60 dias (tempo real de análise de crédito);\n   - Ver Modelo MJ-001 (Contrato com Financiamento) e Cláusula CP-006.\n\nPOSIÇÃO DO ESCRITÓRIO\nAceitar condições bem estruturadas e documentadas. Recusar condições vagas ou sem prazo. Sempre colocar por escrito e sempre com prazo máximo.",
+    "tags": ["proposta-condicionada", "condição-suspensiva", "condição-resolutiva", "negociação"],
+    "status": "ativo",
+    "responsavel": "Giovanni",
+    "ultimaRevisao": "2026-04-10",
+    "createdAt": "2026-01-30T10:00:00.000Z",
+    "updatedAt": "2026-04-10T10:00:00.000Z"
+  }
+]

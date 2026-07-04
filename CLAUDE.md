@@ -1,115 +1,114 @@
-# MazyOS — Sistema operacional do negócio
+# CLAUDE.md
 
-Sua empresa roda em cima desse arquivo. Aqui ficam as regras de operação
-do MazyOS — como o Claude lê o contexto, aprende com correções, mantém
-tudo atualizado e cria skills novas conforme a operação evolui.
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-Esse arquivo é editável. Quando o `/instalar` rodar, ele complementa o
-final dessa página com as regras específicas do seu negócio.
+---
+
+## O que é esse workspace
+
+Operação da Vieira da Silva Advocacia. Aqui ficam todos os clientes, processos, demandas, conteúdo e entregas do escritório — rodando em cima do MazyOS.
+
+**Estrutura de pastas:**
+- `_memoria/` — quem é o escritório, como falamos, foco atual
+- `identidade/` — marca do escritório (aplicada em todas as peças)
+- `marketing/` — conteúdo institucional e de relacionamento
+- `saidas/` — documentos pontuais, análises, relatórios
+- `dados/` — arquivos a analisar (CSVs, PDFs, exports)
+- `scripts/` — utilitários chamados pelas skills
 
 ---
 
 ## Contexto do negócio
 
-No início de toda conversa, ler os seguintes arquivos (quando existirem
-e estiverem preenchidos):
+No início de toda conversa, ler:
 
-1. `_memoria/empresa.md` — quem é o usuário, o que faz, como funciona o negócio
-2. `_memoria/preferencias.md` — tom de voz, estilo de escrita, o que evitar
-3. `_memoria/estrategia.md` — foco atual, prioridades, prazos
+1. `_memoria/empresa.md` — quem é o escritório, equipe, clientes, ferramentas
+2. `_memoria/preferencias.md` — tom de voz, estilo, o que evitar
+3. `_memoria/estrategia.md` — gargalo atual, prioridades, meta de crescimento
 
-Usar essas informações como base pra qualquer resposta ou decisão. Ao
-sugerir prioridades, formatos ou abordagens, considerar o foco atual
-descrito em `estrategia.md`.
+Para qualquer tarefa visual, consultar `identidade/design-guide.md`. Não confirmar a leitura — usar o contexto naturalmente.
 
-Pra qualquer tarefa visual (carrossel, post, landing page), consultar
-`identidade/design-guide.md` como referência de estilo.
+---
 
-Não é necessário listar o que foi lido nem confirmar a leitura. Apenas
-usar o contexto naturalmente.
+## Sobre o escritório
+
+Vieira da Silva Advocacia — direito imobiliário, empresarial e família. Giovanni Pianaro (operador do sistema) é sócio da área imobiliária ao lado de Enrico Bianco e Dr. Fábio Vieira da Silva (fundador). Equipe: Betina Vieira (família), Jaqueline (assistente jurídica), Pedro / Maria / Giovana (estagiários).
+
+**Clientes principais:** 34 imobiliárias (consultoria mensal recorrente) + ~500 corretores vinculados (canal de indicação) + clientes PF indicados pelos corretores.
+
+**Volume atual:** ~70 processos judiciais ativos + demandas extrajudiciais consultivas contínuas. Faturamento imobiliário: ~R$ 40k/mês. Meta: R$ 1,5–2M/ano nessa área.
+
+---
+
+## Tom de voz
+
+Formal mas próximo. O escritório é "o melhor amigo do corretor de imóveis" — jurídico com seriedade e confiança, sem distância. Leveza permitida quando o contexto permite.
+
+**Nunca:** escrita desleixada, incompleta, com erros ou com jargão desnecessário para leigos.
 
 ---
 
 ## Fluxo de trabalho
 
-Antes de executar qualquer tarefa, verificar se existe skill relevante
-em `.claude/skills/`. Se encontrar, seguir as instruções da skill. Se
-não encontrar, executar a tarefa normalmente.
+Antes de executar qualquer tarefa, verificar se existe skill relevante em `.claude/skills/`. Se não, executar normalmente e, ao final, perguntar se a tarefa parece repetível o suficiente pra virar skill.
 
-Ao concluir uma tarefa que não tinha skill mas parece repetível (o
-usuário provavelmente vai pedir de novo no futuro), perguntar:
+---
 
-> "Isso pode virar uma skill pra próxima vez. Quer que eu crie?"
+## Regras do sistema
 
-Não perguntar pra tarefas pontuais ou perguntas simples. Só quando o
-padrão de repetição for claro.
+- Novo cliente → criar pasta `clientes/<Nome>/` com briefing e subpastas conforme as entregas
+- Novo processo → registrar em `processos/` com número, partes, prazo e responsável
+- Proposta nova → `propostas/<cliente>-<data>.html` antes de fechar
+- Conteúdo gerado pelas skills → salvar em `marketing/conteudo/<tipo>-<tema>-<data>/`
 
 ---
 
 ## Aprender com correções
 
-Quando o usuário corrigir algo, melhorar uma resposta ou dar uma
-instrução que parece permanente (frases como "na verdade é assim", "não
-faça mais isso", "prefiro assim", "sempre que...", "evita...", "da
-próxima vez..."), perguntar:
-
+Quando Giovanni corrigir algo ou der instrução permanente, perguntar:
 > "Quer que eu salve isso pra não precisar repetir?"
 
-Se sim, identificar onde faz mais sentido salvar:
-
-- **Sobre o negócio** (clientes, serviços, mercado) → `_memoria/empresa.md`
-- **Sobre preferências e estilo** (tom de voz, formato, o que evitar) → `_memoria/preferencias.md`
-- **Sobre prioridades e foco** (projetos, metas, prazos) → `_memoria/estrategia.md`
-- **Regra de comportamento nessa pasta** → próprio `CLAUDE.md`
-
-Salvar com uma linha nova clara, sem reformatar o arquivo inteiro.
-Confirmar mostrando a linha adicionada.
-
-Não perguntar se a correção for óbvia de contexto imediato (ex: "na
-verdade o arquivo se chama X"). Só perguntar quando a informação tiver
-valor duradouro.
+- Sobre o escritório, clientes ou equipe → `_memoria/empresa.md`
+- Sobre tom ou estilo → `_memoria/preferencias.md`
+- Sobre prioridades → `_memoria/estrategia.md`
+- Regra de comportamento → `CLAUDE.md`
 
 ---
 
 ## Manter contexto atualizado
 
-Ao terminar uma tarefa que mudou algo relevante (cliente novo, skill
-nova, mudança de foco, processo novo, ferramenta instalada, estrutura
-alterada), perguntar:
-
+Ao terminar tarefa que mudou algo relevante (cliente novo, processo encerrado, mudança de foco), perguntar:
 > "Isso mudou algo no teu contexto. Quer que eu atualize a memória?"
 
-Se sim, identificar o que atualizar:
-
-- **Cliente, serviço, ferramenta, equipe** → `_memoria/empresa.md`
-- **Mudança de prioridade ou foco** → `_memoria/estrategia.md`
-- **Tom ou estilo** → `_memoria/preferencias.md`
-- **Pasta, regra de organização, skill criada** → `CLAUDE.md`
-- **Visual (cores, fontes, logo)** → `identidade/design-guide.md`
-
-Mostrar o que vai mudar antes de salvar. Não reformatar o arquivo
-inteiro, só adicionar ou editar a linha relevante.
-
-**Quando NÃO perguntar:**
-- Tarefas pontuais sem impacto no contexto (escrever um email avulso, criar um post)
-- Perguntas simples ou conversas sem ação
-- Mudanças já salvas pelo bloco "Aprender com correções"
-
-**Dica:** rode `/atualizar` pra uma varredura completa quando houver dúvida.
+Quando houver dúvida sobre o que atualizar, rodar `/atualizar`.
 
 ---
 
-## Criação de skills
+## Skills disponíveis
 
-Quando o usuário pedir skill nova:
+| Comando | O que faz |
+|---|---|
+| `/abrir` | Carrega contexto antes de cada sessão |
+| `/salvar` | Commit + push no GitHub |
+| `/atualizar` | Varre o projeto e atualiza a memória |
+| `/novo-projeto` | Cria pasta isolada por cliente ou iniciativa |
+| `/mapear-rotinas` | Transforma tarefas repetitivas em skills |
+| `/analisar-dados` | Lê CSV/XLSX/PDF e gera resumo executivo |
+| `/email-profissional` | Rascunha email a partir de contexto livre |
+| `/carrossel` | Cria carrosséis com identidade da marca |
+| `/publicar-tema` | Artigo + carrossel + legendas a partir de um tema |
+| `/seo` | Fluxo completo de SEO |
+| `/relatorio-ads` | Relatório semanal de anúncios |
 
-1. Verificar se existe template relevante em `templates/skills/`. Se
-   existir, usar como base e adaptar pro contexto
-2. Perguntar se é específica desse projeto ou útil em qualquer:
-   - Específica → `.claude/skills/nome-da-skill/SKILL.md` (local)
-   - Universal → `~/.claude/skills/nome-da-skill/SKILL.md` (global)
-3. Ler `_memoria/empresa.md` e `_memoria/preferencias.md` pra calibrar
-   o conteúdo da skill ao contexto do negócio
-4. Se a skill precisar de arquivos de apoio (templates, exemplos),
-   criar dentro da pasta da skill
-5. Seguir o fluxo da skill-creator nativa do Claude Code
+---
+
+## Ferramentas conectadas
+
+- [ ] Notion
+- [ ] Gmail
+- [ ] Google Calendar
+- [ ] Canva
+- [ ] Google Drive
+- [ ] WhatsApp (via integração a definir)
+
+*(Marcar conforme for instalando os MCPs — ver `templates/ferramentas/catalogo.md`)*
